@@ -28,10 +28,10 @@ SECRET_KEY = os.getenv('KEY_DJANGO')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
-ALLOWED_HOSTS = ['8000-satogako-fsf-hello-djang-a554nu27es.us2.codeanyapp.com']
+ALLOWED_HOSTS = [os.getenv('HOST_NAME')]
 
 
 # Application definition
